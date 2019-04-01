@@ -25,10 +25,9 @@ function handlePanels(panelClass, action) {
   }
 }
 
-// function closePanel(e) {
-//   if (e.target.id !== "panel") {
-//     document.removeEventListener("click", closePanel, false);
-//     panel.style.left = "-30%";
-//   }
-// }
-
+document.onclick = function(e) {
+  if (e.target.classList.contains("search-panel") || e.target.classList.contains("run-panel")) {
+    searchPanel.style.left = "-30%";
+    runPanel.style.left = "-30%";
+  }
+}
