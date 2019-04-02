@@ -36,9 +36,9 @@ button {
 
 .search-panel, .run-panel {
   position: absolute;
-  left: -30%;
+  left: -20%;
   height: 100%;
-  width: 30%;
+  width: 20%;
   background: #fff;
   display: flex;
   flex-flow: column nowrap;
